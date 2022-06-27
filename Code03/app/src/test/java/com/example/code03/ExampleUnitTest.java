@@ -1,4 +1,4 @@
-package com.wrm244.code03;
+package com.example.code03;
 
 import org.junit.Test;
 
