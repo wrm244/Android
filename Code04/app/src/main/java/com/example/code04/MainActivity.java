@@ -13,11 +13,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //测试
         final EditText etMessage = findViewById(R.id.message);
         Button btSent = findViewById(R.id.send_message);
         btSent.setOnClickListener(view -> {
             String message = etMessage.getText().toString().trim();
-            Toast.makeText(MainActivity.this,message,Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this,message,
+                    Toast.LENGTH_SHORT).show();
         });
     }
 }
