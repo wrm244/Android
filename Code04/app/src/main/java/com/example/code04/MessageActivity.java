@@ -13,8 +13,9 @@ public class MessageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
         TextView tvMessage = findViewById(R.id.message);
-        Intent intent = getIntent();
+        Intent intent = new Intent();
         String message = intent.getStringExtra(MainActivity.MESSAGE_STRING);
+        //获取键值对为“MainActivity.MESSAGE_STRING”的value
         if(message!=null){
             if(tvMessage!=null){
                 tvMessage.setText(message);
