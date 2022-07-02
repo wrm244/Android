@@ -12,7 +12,7 @@
         android:id="@+id/btnShowToast"
         android:text="Show Toast"
         android:textColor="@color/white"
-        android:background="@color/colorPrimary"
+        android:background="#F3673AB7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -24,7 +24,7 @@
         android:gravity="center"
         android:text="0"
         android:textSize="160dp"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#F3673AB7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +34,7 @@
         android:id="@+id/btnCount"
         android:text="Count"
         android:textColor="@color/white"
-        android:background="@color/colorPrimary"
+        android:background="#F3673AB7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
