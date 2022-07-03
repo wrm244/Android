@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         Log.d("onRestoreInstanceState","onRestoreInstanceStateStart");
+        //这里如果不是强制退出的，就会自动运行
         super.onRestoreInstanceState(savedInstanceState);
         count=savedInstanceState.getInt(COUNT_VALUE);
         if(tvCount!=null){
