@@ -30,7 +30,6 @@ public class NewsAdapter extends ArrayAdapter<News> {
         View view ;
 
         view = LayoutInflater.from(getContext()).inflate(resourceId, parent, false);
-
         TextView tvTitle  = view.findViewById(R.id.tv_title);
         TextView tvAuthor = view.findViewById(R.id.tv_subtitle);
         ImageView ivImage = view.findViewById(R.id.iv_image);
