@@ -20,25 +20,21 @@ public class MainActivity extends AppCompatActivity {
         final ImageView ivPwdSwitch = findViewById(R.id.iv_pwd_switch);
         etPwd = findViewById(R.id.et_pwd);
 
-        ivPwdSwitch.setOnClickListener(new View.OnClickListener() {
-
-            //修改密码的显示与隐藏
-            @Override
-            public void onClick(View view) {
-                bPwdSwitch = !bPwdSwitch;
-                if (bPwdSwitch) {
-                    ivPwdSwitch.setImageResource(
-                            R.drawable.ic_baseline_visibility_off_24);
-                    etPwd.setInputType(
-                            InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
-                } else {
-                    ivPwdSwitch.setImageResource(
-                            R.drawable.ic_baseline_visibility_off_24);
-                    etPwd.setInputType(
-                            InputType.TYPE_TEXT_VARIATION_PASSWORD |
-                                    InputType.TYPE_CLASS_TEXT);
-                    etPwd.setTypeface(Typeface.DEFAULT);
-                }
+        //修改密码的显示与隐藏
+        ivPwdSwitch.setOnClickListener(view -> {
+            bPwdSwitch = !bPwdSwitch;
+            if (bPwdSwitch) {
+                ivPwdSwitch.setImageResource(
+                        R.drawable.ic_baseline_visibility_off_24);
+                etPwd.setInputType(
+                        InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+            } else {
+                ivPwdSwitch.setImageResource(
+                        R.drawable.ic_baseline_visibility_24);
+                etPwd.setInputType(
+                        InputType.TYPE_TEXT_VARIATION_PASSWORD |
+                                InputType.TYPE_CLASS_TEXT);
+                etPwd.setTypeface(Typeface.DEFAULT);
             }
         });
 
