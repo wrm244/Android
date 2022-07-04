@@ -1,13 +1,12 @@
 package com.example.code05;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.InputType;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Boolean bPwdSwitch = false;
