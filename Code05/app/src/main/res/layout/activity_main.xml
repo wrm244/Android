@@ -82,6 +82,14 @@
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="wrap_content">
+        <Button
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:background="@color/white"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </RelativeLayout>
 
 </LinearLayout>
