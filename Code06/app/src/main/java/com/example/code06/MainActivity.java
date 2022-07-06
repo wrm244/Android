@@ -1,12 +1,10 @@
 package com.example.code06;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.widget.ImageView;
 import android.widget.ListView;
+import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 

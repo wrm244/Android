@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
         //修改密码的显示与隐藏
         ivPwdSwitch.setOnClickListener(view -> {
-            bPwdSwitch = !bPwdSwitch;
-            if (bPwdSwitch) {
+
+            if (!bPwdSwitch) {
                 ivPwdSwitch.setImageResource(
                         R.drawable.ic_baseline_visibility_off_24);
                 etPwd.setInputType(
@@ -31,11 +31,12 @@ public class MainActivity extends AppCompatActivity {
                 ivPwdSwitch.setImageResource(
                         R.drawable.ic_baseline_visibility_24);
                 etPwd.setInputType(
-                        InputType.TYPE_TEXT_VARIATION_PASSWORD |
-                                InputType.TYPE_CLASS_TEXT);
+                        InputType.TYPE_TEXT_VARIATION_PASSWORD | InputType.TYPE_CLASS_TEXT);
                 etPwd.setTypeface(Typeface.DEFAULT);
             }
+            bPwdSwitch = !bPwdSwitch;
         });
+
 
     }
 }
