@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //测试
         final EditText etMessage = findViewById(R.id.message);
         Button btSent = findViewById(R.id.send_message);
+        //为Send Message按钮添加点击事件侦听器
         btSent.setOnClickListener(view -> {
             String message = etMessage.getText().toString().trim();
             Intent intent = new Intent(MainActivity.this,MessageActivity.class);
