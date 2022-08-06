@@ -6,7 +6,6 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.InputType;
 import android.text.TextUtils;
-import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -75,10 +74,12 @@ public class MainActivity extends AppCompatActivity {
             }
             bPwdSwitch = !bPwdSwitch;
         });
-        btLogin.setOnClickListener((View.OnClickListener) this);
+        btLogin.setOnClickListener(view -> {
+            onClick();
+        });
 
     }
-    public void onClick(View view) {
+    public void onClick() {
         String spFileName = getResources()
                 .getString(R.string.shared_preferences_file_name);
         String accountKey = getResources()
@@ -100,12 +101,11 @@ public class MainActivity extends AppCompatActivity {
             editor.putString(accountKey, account);
             editor.putString(passwordKey, password);
             editor.putBoolean(rememberPasswordKey, true);
-            editor.apply();
         } else {
             editor.remove(accountKey);
             editor.remove(passwordKey);
             editor.remove(rememberPasswordKey);
-            editor.apply();
         }
+        editor.apply();
     }
 }
